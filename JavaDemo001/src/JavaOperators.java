@@ -49,10 +49,12 @@ public class JavaOperators {
 		}
 		*/
 		
-		System.out.println( a % 2 == 0 ? " a is even " : " a is odd ");
-		
+		System.out.println( (a % 2 == 0) ? " a is even " : " a is odd ");
+		// ?:
 		
 		int uo = 5;
+		
+		int test = (a % 2 == 0) ? 100 : 200;
 		
 		// uo = -uo;
 		// uo++; ++uo;
