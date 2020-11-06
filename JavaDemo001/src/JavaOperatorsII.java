@@ -19,7 +19,7 @@ public class JavaOperatorsII {
 		Scanner sc = new Scanner(System.in);
 		
 		//System.out.println("Enter int number: ");
-		//int input = sc.nextInt();
+		// int input = sc.nextInt();
 		//System.out.println( "input  = " +  input );
 		
 		//System.out.println("Enter a float number: ");
@@ -82,14 +82,72 @@ public class JavaOperatorsII {
 		
 		System.out.println( "\tHELLO\t'hello'\t\"STRINGS METHODS\"" );
 		System.out.print( "\tHELLO\t'hello'\t\"STRINGS METHODS\"\n" );
-		System.out.print( "\tHELLO" );
+		System.out.print( "\tHELLO\n" );
 		
+		// D R Y - 
 		
-		int day = 4;
+		int day = 5;
+		String res = "";
 		
 		if(day == 1) {
-			System.out.print( "Monday" );
+			res = "Monday";
 		}
+		else if(day == 2)
+			res = "Tuesday";
+		else if(day == 3)
+			res = "Wednesday";
+		else if(day == 2)
+			res = "Tuesday";
+		else if(day == 4)
+			res = "Thursday";
+		else if(day == 5)
+			res= "Friday";
+		else if(day == 6)
+			res =  "Saturday";
+		else if(day == 7)
+			res =  "Sunday";		
+		else {
+			res = "Unknown input";
+		}
+		System.out.println("res = " + res);
+		
+		res = day == 1 ? "Monday" : 
+				day == 2 ? "Tuesday" :
+				day == 3 ? "Wednesday" :
+				day == 4 ? "Thursday" :
+				day == 5 ? "Friday" :
+				day == 6 ? "Saturday" :
+				day == 7 ? "Sunday" : "Unknown input";
+		
+		System.out.println(" ter.op.res = " + res);
+		
+		switch(day) {
+		case 1:
+			System.out.println( "Monday" );
+			break;
+		case 2:
+			System.out.println( "Tuesday" );
+			break;
+		case 3:
+			System.out.println( "Wednesday" );
+			break;
+		case 4:
+			System.out.println( "Thursday" );
+			break;
+		case 5:
+			System.out.println( "Friday" );
+			break;
+		case 6:
+			System.out.println( "Saturday" );
+			break;
+		case 7:
+			System.out.println( "Sunday" );
+			break;
+		default:	
+			System.out.println( "Unknown input" );
+			// break;
+		}
+		
 	}
 
 }
